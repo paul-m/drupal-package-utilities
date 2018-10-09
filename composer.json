@@ -1,0 +1,21 @@
+{
+    "name": "drupal/package-utilities",
+    "description": "Drupal-specific Composer scripts.",
+    "type": "composer-plugin",
+    "minimum-stability": "dev",
+    "require": {
+        "composer-plugin-api": "^1.1",
+        "drupal/core-php-storage": "@dev"
+    },
+    "require-dev": {
+        "composer/composer": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "DrupalPackageUtilities\\": "src"
+        }
+    },
+    "extra": {
+        "class": "DrupalPackageUtilities\\Plugin"
+    }
+}
